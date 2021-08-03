@@ -111,9 +111,10 @@ class CalViewController: UIViewController {
         
         label = cal.checkIfIsDoubleOrInt(label: String(numberInput))
         
-        let i = label.index(label.startIndex, offsetBy: 2)
         
         if Double(label)! < 1 && label.contains("e"){
+            
+            let i = label.index(label.startIndex, offsetBy: 2)
             
             while (label.contains(".") && label.count > 5) {
                 

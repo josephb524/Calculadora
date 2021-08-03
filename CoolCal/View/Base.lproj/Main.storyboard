@@ -311,6 +311,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="qOj-h3-YKw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" priority="900" constant="5" id="4IW-on-HeH"/>
                             <constraint firstItem="Uw5-1O-rJt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="AWD-dD-xkS"/>
                             <constraint firstItem="Uw5-1O-rJt" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="dr0-4f-6BY"/>
                             <constraint firstItem="Uw5-1O-rJt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="vGo-Qj-pDS"/>
