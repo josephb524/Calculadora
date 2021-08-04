@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,26 +13,26 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="CalViewController" customModule="CoolCal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Uw5-1O-rJt">
-                                <rect key="frame" x="0.0" y="44" width="390" height="766"/>
+                                <rect key="frame" x="44" y="0.0" width="756" height="369"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOj-h3-YKw" userLabel="Top_View">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="324"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="756" height="68.666666666666671"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="ZbG-Fg-gvz">
-                                                <rect key="frame" x="10" y="234" width="360" height="90"/>
+                                                <rect key="frame" x="10" y="-21.333333333333314" width="726" height="90"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTz-Io-UBM">
-                                                        <rect key="frame" x="0.0" y="0.0" width="360" height="30"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="726" height="30"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="rAR-Qy-Fvh">
-                                                        <rect key="frame" x="0.0" y="30" width="360" height="60"/>
+                                                        <rect key="frame" x="0.0" y="30" width="726" height="60"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -49,16 +49,16 @@
                                         </constraints>
                                     </view>
                                     <view clipsSubviews="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ib2-cd-GgK" userLabel="Bottom_View">
-                                        <rect key="frame" x="0.0" y="324" width="390" height="442"/>
+                                        <rect key="frame" x="0.0" y="68.666666666666629" width="756" height="300.33333333333337"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="92V-pV-sTN">
-                                                <rect key="frame" x="10" y="10" width="370" height="422"/>
+                                                <rect key="frame" x="10" y="10" width="736" height="280.33333333333331"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="1Rr-ql-BON">
-                                                        <rect key="frame" x="0.0" y="0.0" width="74.666666666666671" height="422"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="166" height="280.33333333333331"/>
                                                         <subviews>
                                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kfr-6P-ZTj" customClass="CircleButton" customModule="CoolCal" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="74.666666666666671" height="82"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="166" height="53.666666666666664"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="36"/>
                                                                 <state key="normal" title="AC" backgroundImage="2020-black-reptile-skin-th">
@@ -69,7 +69,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QyX-Ra-1r3" customClass="CircleButton" customModule="CoolCal" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="85" width="74.666666666666671" height="82"/>
+                                                                <rect key="frame" x="0.0" y="56.666666666666671" width="166" height="53.666666666666671"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                                 <state key="normal" title="7" backgroundImage="2020-black-reptile-skin-th">
@@ -80,7 +80,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJY-Dk-3PZ" customClass="CircleButton" customModule="CoolCal" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="170" width="74.666666666666671" height="82"/>
+                                                                <rect key="frame" x="0.0" y="113.33333333333333" width="166" height="53.666666666666671"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                                 <state key="normal" title="4" backgroundImage="2020-black-reptile-skin-th">
@@ -91,7 +91,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFg-EE-k6w" customClass="CircleButton" customModule="CoolCal" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="255" width="74.666666666666671" height="82"/>
+                                                                <rect key="frame" x="0.0" y="170" width="166" height="53.666666666666657"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                                 <state key="normal" title="1" backgroundImage="2020-black-reptile-skin-th">
@@ -102,7 +102,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJD-rU-Apd" customClass="CircleButton" customModule="CoolCal" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="340" width="74.666666666666671" height="82"/>
+                                                                <rect key="frame" x="0.0" y="226.66666666666663" width="166" height="53.666666666666686"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                                 <state key="normal" title="." backgroundImage="2020-black-reptile-skin-th">
@@ -115,10 +115,10 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="gaB-eN-5ia">
-                                                        <rect key="frame" x="98.666666666666686" y="0.0" width="74.333333333333314" height="422"/>
+                                                        <rect key="frame" x="190" y="0.0" width="166" height="280.33333333333331"/>
                                                         <subviews>
                                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Msy-Gb-qSJ" customClass="CircleButton" customModule="CoolCal" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="74.333333333333329" height="81.333333333333329"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="166" height="53"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                                                 <state key="normal" title="+/-" backgroundImage="2020-black-reptile-skin-th">
@@ -129,7 +129,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afS-jj-WjI" customClass="CircleButton" customModule="CoolCal" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="85.333333333333314" width="74.333333333333329" height="81"/>
+                                                                <rect key="frame" x="0.0" y="56.999999999999986" width="166" height="52.666666666666671"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                                 <state key="normal" title="8" backgroundImage="2020-black-reptile-skin-th">
@@ -140,7 +140,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bo2-Tl-HBy" customClass="CircleButton" customModule="CoolCal" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="170.33333333333337" width="74.333333333333329" height="81.333333333333314"/>
+                                                                <rect key="frame" x="0.0" y="113.66666666666669" width="166" height="53"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                                 <state key="normal" title="5" backgroundImage="2020-black-reptile-skin-th">
@@ -151,7 +151,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjk-RM-YnE" customClass="CircleButton" customModule="CoolCal" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="255.66666666666663" width="74.333333333333329" height="81"/>
+                                                                <rect key="frame" x="0.0" y="170.66666666666669" width="166" height="52.666666666666657"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                                 <state key="normal" title="2" backgroundImage="2020-black-reptile-skin-th">
@@ -162,7 +162,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQd-TK-mQA" customClass="CircleButton" customModule="CoolCal" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="340.66666666666663" width="74.333333333333329" height="81.333333333333314"/>
+                                                                <rect key="frame" x="0.0" y="227.33333333333331" width="166" height="53"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                                 <state key="normal" title="0" backgroundImage="2020-black-reptile-skin-th">
@@ -175,10 +175,10 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="hd6-Tg-Mlh">
-                                                        <rect key="frame" x="197" y="0.0" width="74.666666666666686" height="422"/>
+                                                        <rect key="frame" x="380" y="0.0" width="166" height="280.33333333333331"/>
                                                         <subviews>
                                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0C-G9-R8n" customClass="CircleButton" customModule="CoolCal" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="74.666666666666671" height="81.333333333333329"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="166" height="53"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                                                 <state key="normal" title="%" backgroundImage="2020-black-reptile-skin-th">
@@ -189,7 +189,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JO1-FH-bFP" customClass="CircleButton" customModule="CoolCal" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="85.333333333333314" width="74.666666666666671" height="81"/>
+                                                                <rect key="frame" x="0.0" y="56.999999999999986" width="166" height="52.666666666666671"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                                 <state key="normal" title="9" backgroundImage="2020-black-reptile-skin-th">
@@ -200,7 +200,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpj-2d-x5e" customClass="CircleButton" customModule="CoolCal" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="170.33333333333337" width="74.666666666666671" height="81.333333333333314"/>
+                                                                <rect key="frame" x="0.0" y="113.66666666666669" width="166" height="53"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                                 <state key="normal" title="6" backgroundImage="2020-black-reptile-skin-th">
@@ -211,7 +211,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEl-T7-cTA" customClass="CircleButton" customModule="CoolCal" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="255.66666666666663" width="74.666666666666671" height="81"/>
+                                                                <rect key="frame" x="0.0" y="170.66666666666669" width="166" height="52.666666666666657"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                                 <state key="normal" title="3" backgroundImage="2020-black-reptile-skin-th">
@@ -222,7 +222,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ls2-dB-ubN" customClass="CircleButton" customModule="CoolCal" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="340.66666666666663" width="74.666666666666671" height="81.333333333333314"/>
+                                                                <rect key="frame" x="0.0" y="227.33333333333331" width="166" height="53"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                                                 <state key="normal" title="00" backgroundImage="2020-black-reptile-skin-th">
@@ -235,10 +235,10 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="XXZ-xa-nXq">
-                                                        <rect key="frame" x="295.66666666666669" y="0.0" width="74.333333333333314" height="422"/>
+                                                        <rect key="frame" x="570" y="0.0" width="166" height="280.33333333333331"/>
                                                         <subviews>
                                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XkA-mD-4oS" customClass="CircleButton" customModule="CoolCal" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="74.333333333333329" height="82.666666666666671"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="166" height="54.333333333333336"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                                 <state key="normal" title="÷" backgroundImage="2020-black-reptile-skin-th">
@@ -249,7 +249,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQj-bU-kdy" customClass="CircleButton" customModule="CoolCal" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="84.666666666666686" width="74.333333333333329" height="83"/>
+                                                                <rect key="frame" x="0.0" y="56.333333333333329" width="166" height="54.666666666666671"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                                 <state key="normal" title="x" backgroundImage="2020-black-reptile-skin-th">
@@ -260,7 +260,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T78-jn-ck7" customClass="CircleButton" customModule="CoolCal" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="169.66666666666663" width="74.333333333333329" height="82.666666666666686"/>
+                                                                <rect key="frame" x="0.0" y="112.99999999999999" width="166" height="54.333333333333329"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                                 <state key="normal" title="-" backgroundImage="2020-black-reptile-skin-th">
@@ -271,7 +271,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jAu-Hl-w2z" customClass="CircleButton" customModule="CoolCal" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="254.33333333333337" width="74.333333333333329" height="83"/>
+                                                                <rect key="frame" x="0.0" y="169.33333333333331" width="166" height="54.666666666666657"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                                 <state key="normal" title="+" backgroundImage="2020-black-reptile-skin-th">
@@ -282,7 +282,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNM-Un-LzN" customClass="CircleButton" customModule="CoolCal" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="339.33333333333337" width="74.333333333333329" height="82.666666666666686"/>
+                                                                <rect key="frame" x="0.0" y="226" width="166" height="54.333333333333314"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                                 <state key="normal" title="=" backgroundImage="2020-black-reptile-skin-th">
@@ -312,11 +312,41 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Uw5-1O-rJt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="AWD-dD-xkS"/>
-                            <constraint firstItem="92V-pV-sTN" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="2:4" id="CjN-Zy-a7K"/>
+                            <constraint firstItem="92V-pV-sTN" firstAttribute="height" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="2:4.5" id="CjN-Zy-a7K"/>
+                            <constraint firstItem="Ib2-cd-GgK" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.77" id="WIS-5Q-dvS"/>
                             <constraint firstItem="Uw5-1O-rJt" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="dr0-4f-6BY"/>
+                            <constraint firstItem="92V-pV-sTN" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.85" id="l8s-h1-cpC"/>
                             <constraint firstItem="Uw5-1O-rJt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="vGo-Qj-pDS"/>
                             <constraint firstItem="Uw5-1O-rJt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ySq-90-TF9"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="WIS-5Q-dvS"/>
+                                <exclude reference="CjN-Zy-a7K"/>
+                                <exclude reference="l8s-h1-cpC"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="WIS-5Q-dvS"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="WIS-5Q-dvS"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="CjN-Zy-a7K"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="CjN-Zy-a7K"/>
+                                <include reference="l8s-h1-cpC"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="aCLbl" destination="Kfr-6P-ZTj" id="Qs7-1k-2nK"/>
