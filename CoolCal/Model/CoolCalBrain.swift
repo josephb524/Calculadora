@@ -20,7 +20,7 @@ struct CoolCalBrain {
             numberText += "00"
             
         }
-        
+       // i allow this statement to be true when someone is getting the percentage and then enter a number
        else if (label == "0" || isAnOparationSet) && number != "D" {
             
             numberText = number

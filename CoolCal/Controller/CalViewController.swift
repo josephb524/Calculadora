@@ -16,6 +16,7 @@ class CalViewController: UIViewController {
     var oparation: String?
     var numberInput = 0.0
     var isAnOparationSet = true
+    var isPercentageReset = true
     var cal = CoolCalBrain()
     
     override func viewDidLoad() {
@@ -28,12 +29,50 @@ class CalViewController: UIViewController {
         numLabel.minimumScaleFactor = 0.5
     }
     
+    func removePercentageReminder(lab: String) -> String {
+    
+        var label = lab
+        
+        if Double(label)! < 1 && label.contains("e") {
+            
+            let i = label.index(label.startIndex, offsetBy: 2)
+            
+            while (label.contains(".") && label.count > 5) {
+                
+                label.remove(at: i)
+                
+                if label.count == 6 && label.contains(".") {
+                    
+                    label.remove(at: label.index(label.startIndex, offsetBy: 1))
+                }
+                
+                if !(label.contains("e")) {
+                    
+                    label.insert("e", at: label.index(label.startIndex, offsetBy: 1))
+                }
+            }
+        }
+        
+        return cal.checkIfIsDoubleOrInt(label: String(label))
+    }
+    
     func updateEquationLabel() {
         
         guard numLabel.text != "inf" else {return}
+        //try to delete the equation label once someone hit "C"
+        if oparation == "%" {
+            
+            let label = removePercentageReminder(lab: String(numberInput))
+            
+            equationLabel.text = "\(label)%"
+            
+            oparation = nil
+        }
         
-        equationLabel.text = "\(cal.checkIfIsDoubleOrInt(label: String(numberInput))) \(oparation!) \(numLabel.text!)"
-
+        else {
+            
+            self.equationLabel.text = "\(cal.checkIfIsDoubleOrInt(label: String(numberInput))) \(oparation!) \(numLabel.text!)"
+        }
         
         equationLabel.textColor = UIColor.white
     }
@@ -73,7 +112,7 @@ class CalViewController: UIViewController {
         else {
             
             numLabel.text = "0"
-            
+            isPercentageReset = true
             aCLbl.setTitle("AC", for: .normal)
         }
     }
@@ -98,41 +137,25 @@ class CalViewController: UIViewController {
     
     @IBAction func percentageBtn(_ sender: UIButton) {
         
-        if numberInput == 0.0 {
-            
-            numberInput = Double(cal.getPercentage(label: numLabel.text!))!
-        }
-        else {
-            
-            numberInput = Double(cal.getPercentage(label: String(numberInput)))!
-        }
-
-        var label = String(numberInput)
+        guard numLabel.text! != "0" else {return}
         
-        label = cal.checkIfIsDoubleOrInt(label: String(numberInput))
-        
-        
-        if Double(label)! < 1 && label.contains("e"){
+        if numberInput == 0.0 || isPercentageReset {
             
-            let i = label.index(label.startIndex, offsetBy: 2)
+            numberInput = Double(numLabel.text!)!
             
-            while (label.contains(".") && label.count > 5) {
-                
-                label.remove(at: i)
-                
-                if label.count == 6 && label.contains(".") {
-                    
-                    label.remove(at: label.index(label.startIndex, offsetBy: 1))
-                }
-                
-                if !(label.contains("e")) {
-                    
-                    label.insert("e", at: label.index(label.startIndex, offsetBy: 1))
-                }
-            }
         }
+        
+        oparation = "%"
+        
+        updateEquationLabel()
+        
+        numberInput = Double(cal.getPercentage(label: String(numberInput)))!
+        
+        let label = removePercentageReminder(lab: String(numberInput))
         
         numLabel.text = label
+        
+        isPercentageReset = false
     }
     
     @IBAction func sevenBtn(_ sender: UIButton) {
